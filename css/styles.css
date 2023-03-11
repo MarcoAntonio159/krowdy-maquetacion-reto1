@@ -347,15 +347,6 @@ select {
     opacity: 100%;
 }
 
-/* .botonApply:hover~.boxAmarilloClaro,
-.botonApply:hover~.boxAmarilloFuerte,
-.botonApply:hover~.boxRosado,
-.botonApply:hover~.boxAzul,
-.botonApply:hover~.boxBlanco {
-    opacity: 100%;
-} */
-
-
 /* COLORES DE CAJAS */
 .boxAmarilloClaro {
     background-color: #FFF38F;
@@ -776,8 +767,4 @@ main {
     letter-spacing: 0em;
     text-align: center;
     margin: 0 20px 0 20px;
-}
-
-#detalleOferta {
-    display: none;
 }

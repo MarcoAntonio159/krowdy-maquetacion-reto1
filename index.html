@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,488 +8,781 @@
     <title>REMOTE | OK</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <input type="button" value="Health insurance">
-            <input type="button" value="Log in">
-            <input type="button" value="Post a remote job">
+            <input type="button" value="Health insurance" class="boton w800 fBlanco bTurquesa">
+            <input type="button" value="Log in" class="boton w800 fNegro">
+            <input type="button" value="Post a remote job" class="boton w800 fBlanco bRojo">
         </nav>
-        <div>
-            <p>remote | OK</p>
-            <p>find a <b>remote job</b></p>
-            <p>work from <b>anywhere</b></p>
+        <div class="textoTitulo">
+            <div class="titulo">
+                <p class="tRemote fBlanco">remote</p>
+                <div class="barraSeparacion"></div>
+                <p class="tOk fBlanco"> OK</p>
+            </div>
+            <img src="img/find a remote job.png" alt="Find a remote job" width="400" class="imageFind">
+            <img src="img/work from anywhere.png" alt="Work from anywhere" width="400" class="imageWork">
+            <div class="inputGroup">
+                <img src="img/search.svg" alt="" class="icon">
+                <input type="text" name="" id="" class="input">
+            </div>
         </div>
-        <input type="button" value="|">
     </header>
 
-    <div>
-        <p>👉 Hiring remotyle? <u>React 2,000,000+ remote workers</u> on the 🏆 <u>#1 Remote Job Board</u></p>
-        <input type="button" value="Post a remote job">
-        <input type="button" value="Hide this">
-    </div>
 
-    <div>
-        <p>trusted by</p>
-        <img src="img/amazon.png.png" alt="Logo Amazon">
-        <img src="img/github.png.png" alt="Logo GitHub">
-        <img src="img/stripe.png.png" alt="Logo Stripe">
-        <img src="img/shopify.png.png" alt="Logo Shopify">
-        <img src="img/upwork.png.png" alt="Logo Upwork">
-        <img src="img/indeed.png.png" alt="Logo Indeed">
-        <img src="img/angellist.png.png" alt="Logo AngelList">
-    </div>
 
-    <div>
-        <div>
-            <div>
-                <!-- <label for="menu">🔍 Search</label> -->
-                <select id="menuSearch">
-                    <option value="opcion1">🔍 Search</option>
-                    <option value="opcion1">Type</option>
-                    <option value="opcion2">🤓 Enginner</option>
-                    <option value="opcion3">💼 Executive</option>
-                    <option value="opcion4">👵 Senior</option>
-                    <option value="opcion5">🤓 Developer</option>
-                    <option value="opcion6">💰 Finance</option>
-                    <option value="opcion7">♾️ Sys Admin</option>
-                </select>
+    <div class="grupo1">
+        <div class="boxPublicarTrabajo">
+            <p class="w800">👉 Hiring remotyle? <u>React 2,000,000+ remote workers</u> on the 🏆 <u>#1 Remote Job
+                    Board</u></p>
+            <input type="button" value="Post a remote job" class="boton bRojo w800 fBlanco">
+            <input type="button" value="Hide this" class="bHideThis">
+        </div>
+        <div class="boxEmpresas">
+            <img class="imagenEmpresas" src="img/trusted by.png" alt="Logo Trusted By">
+            <img class="imagenEmpresas" src="img/amazon.png.png" alt="Logo Amazon">
+            <img class="imagenEmpresas" src="img/github.png.png" alt="Logo GitHub">
+            <img class="imagenEmpresas" src="img/stripe.png.png" alt="Logo Stripe">
+            <img class="imagenEmpresas" src="img/shopify.png.png" alt="Logo Shopify">
+            <img class="imagenEmpresas" src="img/upwork.png.png" alt="Logo Upwork">
+            <img class="imagenEmpresas" src="img/indeed.png.png" alt="Logo Indeed">
+            <img class="imagenEmpresas" src="img/angellist.png.png" alt="Logo AngelList">
+        </div>
+        <div class="boxFiltros">
+            <div class="boxFiltros2">
+                <div>
+                    <img src="img/logo-square.png.png" alt="Logo Square">
+                </div>
+                <div>
+                    <!-- <label for="menu">🔍 Search</label> -->
+                    <select id="menuSearch" class="w800">
+                        <option value="opcion1">🔍 Search</option>
+                        <option value="opcion1">Type</option>
+                        <option value="opcion2">🤓 Enginner</option>
+                        <option value="opcion3">💼 Executive</option>
+                        <option value="opcion4">👵 Senior</option>
+                        <option value="opcion5">🤓 Developer</option>
+                        <option value="opcion6">💰 Finance</option>
+                        <option value="opcion7">♾️ Sys Admin</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="w800" id="menuLocation">
+                        <option value="opcion1">🌍 Location</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="w800" id="menuSalary">
+                        <option value="opcion1">💴 Salary</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="w800" id="menuBenefits">
+                        <option value="opcion1">🎪 Benefits</option>
+                    </select>
+                </div>
             </div>
             <div>
-                <select id="menuLocation">
-                    <option value="opcion1">🌍 Location</option>
-                </select>
-            </div>
-            <div>
-                <select id="menuSalary">
-                    <option value="opcion1">💴 Salary</option>
-                </select>
-            </div>
-            <div>
-                <select id="menuBenefits">
-                    <option value="opcion1">🎪 Benefits</option>
-                </select>
+                <input class="bSortBy w800" type="button" value="🦴 Sort by">
             </div>
         </div>
-        <div>
-            <input type="button" value="🦴 Sort by">
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <p>🤓 Enginner</p>
+        <div class="boxAplicados">
+            <div>
+                <p>🤓 Enginner</p>
+            </div>
+            <div>
+                <p>💼 Executive</p>
+            </div>
+            <div>
+                <p>👵 Senior</p>
+            </div>
+            <div>
+                <p>🤓 Developer</p>
+            </div>
+            <div>
+                <p>💰 Finance</p>
+            </div>
+            <div>
+                <p>♾️ Sys Admin</p>
+            </div>
         </div>
-        <div>
-            <p>💼 Executive</p>
-        </div>
-        <div>
-            <p>👵 Senior</p>
-        </div>
-        <div>
-            <p>🤓 Developer</p>
-        </div>
-        <div>
-            <p>💰 Finance</p>
-        </div>
-        <div>
-            <p>♾️ Sys Admin</p>
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <img src="img/hojaBlanca.png" alt="Nomad Health By SafetyWing">
-        </div>
-        <div>
-            <p>Nomad Health By SafetyWing</p>
-            <p>Global health insurance for remote workers and nomads</p>
-        </div>
-        <div>
-            <input type="button" value="Sign me up">
-        </div>
-    </div>
-
-    <div>
-        <div>
-            <img src="img/Whimsical.png" alt="Whimsical">
-        </div>
-        <div>
-            <div>
-                <p>Marketing Designer</p>
-                <p>VERIFIED</p>
+        <div class="boxOfertas morado">
+            <div class="boxInformacion">
+                <div>
+                    <img src="img/hojaBlanca.png" alt="Nomad Health By SafetyWing">
+                </div>
+                <div class="boxInfoPuesto">
+                    <p class="tituloPuesto fBlanco">Nomad Health By SafetyWing</p>
+                    <p class="nombreEmpresa fBlanco">Global health insurance for remote workers and nomads</p>
+                </div>
             </div>
-            <div>
-                <p>Whimsical</p>
+            <div class="boxApply">
+                <input type="button" value="Sign me up" class="botonApply w800 fBlanco bTurquesa">
             </div>
-            <div>
-                <input type="button" value="🇪🇺 Europe">
-                <input type="button" value="🇬🇧 United Kingdom">
-                <input type="button" value="🇺🇸 United States">
-                <input type="button" value="🇨🇦 Canada">
-            </div>
-        </div>
-        <div>
-            <input type="button" value="Design">
-            <input type="button" value="Marketing">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>6d</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
         </div>
     </div>
 
-    <div>
-        <div>
-            <img src="img/Tranxan.png" alt="Tranxan">
-        </div>
-        <div>
-            <div>
-                <p>PHP Developer</p>
-                <!-- <p>VERIFIED</p> -->
+    <main>
+        <div class="boxOfertas boxAmarilloClaro marginSuperior">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Whimsical.png" alt="Whimsical">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div class="boxPuestoVerifiedOrNew">
+                        <p class="tituloPuesto">Marketing Designer</p>
+                        <div class="boxVerified">VERIFIED</div>
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Whimsical</p>
+                    </div>
+                    <div class="boxInline">
+                        <div>
+                            <img src="img/🇪🇺 Europe.png" alt="Bandera Europa" class="botonCaracteristicas">
+                        </div>
+                        <div>
+                            <img src="img/🇬🇧 United Kingdom.png" alt="Bandera Reino Unido"
+                                class="botonCaracteristicas">
+                        </div>
+                        <div>
+                            <img src="img/🇺🇸 United States.png" alt="Bandera Estados Unidos"
+                                class="botonCaracteristicas">
+                        </div>
+                        <div>
+                            <img src="img/🇨🇦 Canada.png" alt="Bandera Canada" class="botonCaracteristicas">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Transax</p>
+            <div class="puestoRelacionado">
+                <input class="" type="button" value="Design">
+                <input class="" type="button" value="Marketing">
             </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $50k - $120k">
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>6d</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
             </div>
         </div>
-        <div>
-            <input type="button" value="Enginner">
-            <input type="button" value="Developer">
-            <input type="button" value="Full Stack">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>22d</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <img src="img/Sticker Mule.png" alt="Sticker Mule">
-        </div>
-        <div>
-            <div>
-                <p>Site Reliability Engineer 🎈</p>
-                <!-- <p>VERIFIED</p> -->
-            </div>
-            <div>
-                <p>Sticker Mule</p>
-                <img src="img/new.png" alt="Gift new">
-            </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $140k - $150k">
-            </div>
-        </div>
-        <div>
-            <input type="button" value="Enginner">
-            <input type="button" value="JavaScript">
-            <input type="button" value="Golang">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>4h</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
+        <div class="boxDetalleOferta" id="detalleOferta">
+            <div class="boxDetalle1">
+                <div class="boxTextoParte1">
 
-    <div>
-        <div>
-            <img src="img/Sticker Mule.png" alt="Sticker Mule">
-        </div>
-        <div>
-            <div>
-                <p>Software engineer 🎈</p>
-                <!-- <p>VERIFIED</p> -->
-            </div>
-            <div>
-                <p>Sticker Mule</p>
-                <img src="img/new.png" alt="Gift new">
-            </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $140k - $150k">
-            </div>
-        </div>
-        <div>
-            <input type="button" value="Enginner">
-            <input type="button" value="JavaScript">
-            <input type="button" value="React">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>4h</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
+                    <h3 class="inputEmpresa">Whimsical is hiring a</h3>
+                    <h2 class="inputPuesto">Remote Marketing Designer</h2>
+                    <h4 class="inputH4">Description</h4>
+                    <p class="inputParrafo">
+                        <a href="https://whimsical.com/" target="_blank" class="inputNegrita">Whimsical</a> is a B2B
+                        SaaS company on a mission to make collaboration
+                        more enjoyable and productive
+                        by building an all-in-one collaboration hub. We are are passionate about user experience,
+                        interconnectedness of tools and building software that feels like magic.
+                    </p>
+                    <p class="inputParrafo">
+                        We’re looking for an experienced Marketing Designer to help us evolve and scale the Whimsical
+                        brand across various channels and mediums.
+                    </p>
+                    <h4 class="inputH4V2">About The Role</h4>
+                    <p class="inputParrafo">
+                        <a href="https://whimsical.com/" target="_blank" class="inputNegrita">Whimsical</a> is a
+                        product-led company that truly values design and
+                        craftsmanship. We strive to
+                        build world-class software that is fast, elegant, and insanely polished. Whimsical is extremely
+                        visual and design plays a central role in everything we do. In short, this is an incredible
+                        place to be a designer.
+                    </p>
+                    <p class="inputParrafo">
+                        This is an exciting opportunity to help grow and elevate Whimsical’s marketing. The right
+                        candidate is a versatile designer who is comfortable getting in the weeds and working directly
+                        in the tools to build effective marketing experiences (mainly digital and web.)
+                    </p>
+                    <p class="inputParrafo">
+                        You will report to our Head of Product Design, <a
+                            href="https://www.linkedin.com/in/mindywagner/" target="_blank" class="inputNegrita">Mindy
+                            Wagner</a>. You
+                        will also work closely with the
+                        VP of Marketing, <a href="https://www.linkedin.com/in/melissawsho/" target="_blank"
+                            class="inputNegrita">Melissa Ho</a>.
+                    </p>
 
-    <div>
-        <div>
-            <img src="img/Migaku.png" alt="Migaku">
-        </div>
-        <div>
-            <div>
-                <p>Senior Front End Developer</p>
-                <!-- <p>VERIFIED</p> -->
+                </div>
+                <div class="boxAside">
+                    <img src="img/Whimsical 115x115.png" alt="Logo Whimsical">
+                    <p class="whimsical">Whimsical</p>
+                    <p class="paginaWeb">whimsical.com</p>
+                    <div class="botonApplyForThisJob">Apply for this job</div>
+                    <p class="views">
+                        👀 3,951 views
+                    </p>
+                    <p class="views">
+                        ✅ 239 applied (6%)
+                    </p>
+                    <p class="shareThisJob">
+                        Share this job:
+                    </p>
+                    <div class="url">
+                        <p>https://remoteok.co...</p>
+                    </div>
+                    <p>Get a <a href="https://remoteok.com/hire-remotely" target="_blank">rok.co</a> short link</p>
+                    <img src="img/Line 3.png" alt="" id="linea">
+                    <p class="views">Also hiring:</p>
+                    <a href="https://remoteok.com/remote-jobs/remote-people-operations-generalist-whimsical-198405"
+                        target="_blank" class="shareThisJob">People Operations<br>Generalist</a>
+                </div>
             </div>
-            <div>
-                <p>Migaku</p>
-                <!-- <img src="img/new.png" alt="Gift new"> -->
-            </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $60k - $100k">
-            </div>
-        </div>
-        <div>
-            <input type="button" value="Enginner">
-            <input type="button" value="Senior">
-            <input type="button" value="Developer">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>24d</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
+            <div class="boxDetalle2">
+                <h4 class="inputH4">Your responsibilities include:</h4>
+                <ul>
+                    <li class="inputParrafoV2">Develop and design marketing concepts that bring our brand to life,
+                        connect with potential
+                        customers, and drive acquisition across various touch points (primarily digital) such as our
+                        website, social graphics, and marketing campaigns. </li>
+                    <li class="inputParrafoV2">Create brand assets including graphics, photography, illustration, icons,
+                        infographics,
+                        video/animations, etc. Deliver unexpected and inspiring designs on both large and small tasks.
+                    </li>
+                    <li class="inputParrafoV2">Improve the user experience and effectiveness of our website, campaigns,
+                        and activations.
+                        Translate data-driven insights into improved brand experiences.</li>
+                </ul>
 
-    <div>
-        <div>
-            <img src="img/Sticker Mule.png" alt="Sticker Mule">
-        </div>
-        <div>
-            <div>
-                <p>Software Engineer Backend 🎈</p>
-                <!-- <p>VERIFIED</p> -->
-            </div>
-            <div>
-                <p>Sticker Mule</p>
-                <!-- <img src="img/new.png" alt="Gift new"> -->
-            </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $130k - $150k">
-            </div>
-        </div>
-        <div>
-            <input type="button" value="Developer">
-            <input type="button" value="JavaScript">
-            <input type="button" value="React">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>1d</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <img src="img/IAPWE.png" alt="IAPWE">
-        </div>
-        <div>
-            <div>
-                <p>Freelance Writer 🎈</p>
-                <p>VERIFIED</p>
-            </div>
-            <div>
-                <p>IAPWE</p>
-                <img src="img/hot.png" alt="Hot">
-            </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $40k - $50k">
-            </div>
-        </div>
-        <div>
-            <input type="button" value="Content Writing">
-            <input type="button" value="Non Tech">
-            <input type="button" value="Writting">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>27d</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
+                <h4 class="inputH4V2">About you</h4>
+                <ul>
+                    <li class="inputParrafoV2">You have 5+ years of proven marketing design experience and a portfolio
+                        showcasing high-quality
+                        marketing and web design deliverables.</li>
+                    <li class="inputParrafoV2">You are a creative visual storyteller with excellent typography, color,
+                        layout, and composition
+                        skills.</li>
+                    <li class="inputParrafoV2">You can develop a beautiful, thoughtful, and engaging website UI. You are
+                        comfortable with
+                        HTML/CSS and
+                        can build and edit websites using Webflow. Bonus points if you can also create website
+                        animations.</li>
+                    <li class="inputParrafoV2">You have a working knowledge of the various tools needed to realize your
+                        vision.</li>
+                    <li class="inputParrafoV2">You live at the intersection of marketing and user experience and
+                        understand how to take users
+                        on a
+                        complete journey from discovery to adoption and success.</li>
+                    <li class="inputParrafoV2">You have knowledge and familiarity with a data-informed approach to
+                        design – you’ve used tools
+                        and
+                        resources needed to measure the success of design decisions (A/B testing tools, Google
+                        Analytics, etc.)</li>
+                    <li class="inputParrafoV2">You are excited to work at every stage of a project, from initial concept
+                        through final
+                        production, with
+                        minimal direct oversight.</li>
+                    <li class="inputParrafoV2">You feel that our <a href="https://whimsical.com/blog" target="_blank"
+                            class="inputNegrita">philosophy</a> resonates with you and you can see it guiding your
+                        decisions while
+                        at
+                        Whimsical.</li>
+                    <li class="inputParrafoV2">You are able to communicate in English clearly both verbally and in
+                        writing.</li>
+                    <li class="inputParrafoV2">You're a self-starter who can keep track of multiple projects with
+                        minimal oversight.</li>
+                </ul>
+                <h4 class="inputH4V2">Requirements</h4>
+                <ul>
+                    <li class="inputParrafoV2">Due to legal and compliance reasons we’re looking for someone in either
+                    </li>
+                    <li class="inputParrafoV3">🇺🇸🇨🇦North America</li>
+                    <li class="inputParrafoV3">🇪🇺European Union</li>
+                    <li class="inputParrafoV3">🇬🇧United Kingdom</li>
+                    <li class="inputParrafoV2">A resume or manually entered experience (you can choose your preference).
+                    </li>
+                    <li class="inputParrafoV2">A link to your portfolio.</li>
+                    <li class="inputParrafoV2">Thoughtful, thorough responses to all the application questions.</li>
+                </ul>
 
-    <div>
-        <div>
-            <img src="img/Wander.com.png" alt="Wander.com">
-        </div>
-        <div>
-            <div>
-                <p>Platform Engineer</p>
-                <p>VERIFIED</p>
-            </div>
-            <div>
-                <p>Wander.com </p>
-                <!-- <img src="img/hot.png" alt="Hot"> -->
-            </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $10k - $150k">
-            </div>
-        </div>
-        <div>
-            <input type="button" value="Enginner">
-            <input type="button" value="Sys Admin">
-            <input type="button" value="JavaScript">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>5d</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
+                <h4 class=inputH4V2>Benefits</h4>
+                <ul>
+                    <li class="inputParrafoV2">100% Remote: We’re spread from California to Latvia and we’ve got you
+                        covered if you prefer to work from
+                        a coworking space</li>
+                    <li class="inputParrafoV2">Salary: Annual salary starting at $118,164-$147,705</li>
+                    <li class="inputParrafoV2">Vacation: 6 weeks of paid time off each year</li>
+                    <li class="inputParrafoV2">Parental Leave: 16 weeks paid by company</li>
+                    <li class="inputParrafoV2">Equipment: We provide all the tech you need to work successfully</li>
+                    <li class="inputParrafoV2">Summits: We try to bring everyone together at least twice a year</li>
+                    <li class="inputParrafoV2">Pension*: 401k with 6% company matching</li>
+                    <li class="inputParrafoV2">Health Insurance*: Paid by company for you and dependents</li>
+                </ul>
+                <p>
+                    * Availability may depend on your location and our current administrative capabilities there.
+                </p>
+                <h4 class="inputH4V2">About Whimsical</h4>
+                <p class="inputParrafo">
+                    Whimsical was founded in 2017 by Kaspars Dancis and Steve Schoeffel to help teams be more effective
+                    in
+                    the distributed and fully digital work environment.
+                </p>
+                <p class="inputParrafo">
+                    Whimsical's product is expressive, fast, and delightful. We believe that software should spark joy,
+                    not
+                    dread.
+                </p>
+                <p class="inputParrafo">
+                    We are a remote-first company and big proponents of remote work because it democratizes the
+                    opportunities for people everywhere.
+                </p>
+                <p class="inputParrafo">
+                    Our operating philosophy is based on set of core principles, such as:
+                </p>
+                <ul>
+                    <li class="inputParrafoV2"><span class="inputNegrita">Sustainability</span>: We don't believe in
+                        growth at all costs. Growth is a fundamental part of a healthy
+                        existence but we want it to be in balance with sustainability and bounded by ethical behavior.
+                        We strive
+                        to work calm, 40-hour work weeks. Whimsical is also committed to doing our part towards a
+                        sustainable
+                        future for the planet.</li>
+                    <li class="inputParrafoV2"><span class="inputNegrita">Craftsmanship</span>: We care deeply about our
+                        work. We are specialists, eager learners, and persistent in our
+                        pursuit of quality work. We're patient and committed because building great things takes time.
+                    </li>
+                    <li class="inputParrafoV2"><span class="inputNegrita">Long-term focus</span>: We're building
+                        Whimsical for the long-haul, not a quick exit. We avoid shortcuts and
+                        consider every key decision from a 10+ year perspective.</li>
+                    <li class="inputParrafoV2"><span class="inputNegrita">Partnership Mindset</span>: We’ve built the
+                        company around the idea that everybody who joins us should feel
+                        like they are partners in the business. Time is precious and we want Whimsical to be the place
+                        where
+                        people invest their time rather than sell it. Our equity offers are 100% transparent and above
+                        market
+                        average. We also pay everyone at the same level the same salary, no matter where they live.</li>
+                </ul>
+                <p class="inputParrafo">
+                    Please mention the word <span class="inputNegrita">SWIFTNESS</span> when applying to show you read
+                    the job post completely <br>
+                    (#RMjA5LjQ1LjU4LjE2MQ==). This is a feature to avoid fake spam applicants. Companies can search
+                    these
+                    words to find applicants that read this and instantly see they're human.
+                </p>
+                <h3 class="inputH3">Salary and compensation</h3>
+                <p class="inputParrafo">$110,000 — $150,000/year</p>
+                <h3 class="inputH3">Benefits</h3>
+                <p class="inputParrafo">💰 401(k)</p>
+                <p class="inputParrafo">🌎 Distributed team</p>
+                <p class="inputParrafo">⏰ Async</p>
+                <p class="inputParrafo">🤓 Vision insurance</p>
+                <p class="inputParrafo">🦷 Dental insurance</p>
+                <p class="inputParrafo">🚑 Medical insurance</p>
+                <p class="inputParrafo">🏖 Paid time off</p>
+                <p class="inputParrafo">💰 401k matching</p>
+                <p class="inputParrafo">🏔 Company retreats</p>
+                <p class="inputParrafo">🎅 We hire old (and young)</p>
 
-    <div>
-        <div>
-            <img src="img/White Sand.png" alt="White Sand">
-        </div>
-        <div>
-            <div>
-                <p>Software Developer 🎈</p>
-                <p>VERIFIED</p>
+                <div class="boxPadreHowDoYouApply">
+                    <div class="boxHijoHowDoYouApply">
+                        <div class="inputHowDoYouApply">How do you apply?</div>
+                        <div class="boxApplyForThisJob">Apply for this job</div>
+                        <p class="inputReferencia">
+                            👉 Please reference you found the job on Remote OK, this helps us get more companies to post
+                            here, thanks! <br><br>
+                        </p>
+                        <p class="condiciones">
+                            When applying for jobs, you should NEVER have to pay to apply. You should also NEVER have to
+                            pay to buy equipment which they then pay you back for later. Also never pay for trainings
+                            you have to do. Those are scams! NEVER PAY FOR ANYTHING! Posts that link to pages with "how
+                            to work online" are also scams. Don't use them or pay for them. Also always verify you're
+                            actually talking to the company in the job post and not an imposter. A good idea is to check
+                            the domain name for the site/email and see if it's the actual company's main domain name.
+                            Scams in remote work are rampant, be careful! <a
+                                href="https://twitter.com/levelsio/status/1300443073562980353?s=20" target="_blank"
+                                class="inputNegritaV2">Read more to avoid scams</a>. When clicking on the
+                            button to apply above, you will leave Remote OK and go to the job application page for that
+                            company outside this site. Remote OK accepts no liability or responsibility as a consequence
+                            of any reliance upon information on there (external sites) or here.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>White Sand</p>
-                <!-- <img src="img/hot.png" alt="Hot"> -->
-            </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $40k - $150k">
-            </div>
         </div>
-        <div>
-            <input type="button" value="Senior">
-            <input type="button" value="Developer">
-            <input type="button" value="JavaScript">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>6d</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <img src="img/Doughnut.png" alt="Doughnut">
-        </div>
-        <div>
-            <div>
-                <p>Freelance Copywriter</p>
-                <!-- <p>VERIFIED</p> -->
+        <div class="boxOfertas boxAmarilloFuerte">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Tranxan.png" alt="Tranxan">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">PHP Developer</p>
+                        <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Transax</p>
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $50k - $120k" class="botonCaracteristicas">
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Doughnut</p>
-                <!-- <img src="img/hot.png" alt="Hot"> -->
+            <div class="puestoRelacionado">
+                <input type="button" value="Enginner">
+                <input type="button" value="Developer">
+                <input type="button" value="Full Stack">
             </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $50k - $80k">
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>22d</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
             </div>
         </div>
-        <div>
-            <input type="button" value="Non tech">
-            <input type="button" value="Content Writing">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>7d</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <img src="img/Doughnut.png" alt="Doughnut">
-        </div>
-        <div>
-            <div>
-                <p>Freelance Graphic Designer</p>
-                <!-- <p>VERIFIED</p> -->
+        <div class="boxOfertas boxAmarilloClaro">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Sticker Mule.png" alt="Sticker Mule">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">Site Reliability Engineer 🎈
+                            <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Sticker Mule</p>
+                        <img src="img/new.png" alt="Gift new">
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $140k - $150k" class="botonCaracteristicas">
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Doughnut</p>
-                <!-- <img src="img/hot.png" alt="Hot"> -->
+            <div class="puestoRelacionado">
+                <input type="button" value="Enginner">
+                <input type="button" value="JavaScript">
+                <input type="button" value="Golang">
             </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $60k - $90k">
-                <input type="button" value="⏰ Contractor">
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>4h</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
             </div>
         </div>
-        <div>
-            <input type="button" value="Desing">
-        </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>8h</p>
-        </div>
-        <div>
-            <input type="button" value="Apply">
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <img src="img/Lyra Health.png" alt="Lyra Health">
-        </div>
-        <div>
-            <div>
-                <p>Platform Technical Support Specialist</p>
-                <!-- <p>VERIFIED</p> -->
+        <div class="boxOfertas boxAmarilloClaro">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Sticker Mule.png" alt="Sticker Mule">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">Software engineer 🎈</p>
+                        <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Sticker Mule</p>
+                        <img src="img/new.png" alt="Gift new">
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $140k - $150k" class="botonCaracteristicas">
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Lyra Health</p>
-                <img src="img/new.png" alt="New">
+            <div class="puestoRelacionado">
+                <input type="button" value="Enginner">
+                <input type="button" value="JavaScript">
+                <input type="button" value="React">
             </div>
-            <div>
-                <input type="button" value="🌏 Worldwide">
-                <input type="button" value="💰 $73k - $118k*">
-                <input type="button" value="⏰ Contractor">
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>4h</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
             </div>
         </div>
-        <div>
-            <input type="button" value="System">
-            <input type="button" value="Teaching">
-            <input type="button" value="Cfo">
+
+        <div class="boxOfertas boxRosado">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Migaku.png" alt="Migaku">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">Senior Front End Developer</p>
+                        <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Migaku</p>
+                        <!-- <img src="img/new.png" alt="Gift new"> -->
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $60k - $100k" class="botonCaracteristicas">
+                    </div>
+                </div>
+            </div>
+            <div class="puestoRelacionado">
+                <input type="button" value="Enginner">
+                <input type="button" value="Senior">
+                <input type="button" value="Developer">
+            </div>
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>24d</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
+            </div>
         </div>
-        <div>
-            <img src="img/Attach.png" alt="Attach">
-            <p>2h</p>
+
+        <div class="boxOfertas boxAmarilloClaro">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Sticker Mule.png" alt="Sticker Mule">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">Software Engineer Backend 🎈</p>
+                        <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p>Sticker Mule</p>
+                        <!-- <img src="img/new.png" alt="Gift new"> -->
+                    </div>
+                    <div>
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $130k - $150k" class="botonCaracteristicas">
+                    </div>
+                </div>
+            </div>
+            <div class="puestoRelacionado">
+                <input type="button" value="Developer">
+                <input type="button" value="JavaScript">
+                <input type="button" value="React">
+            </div>
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>1d</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
+            </div>
         </div>
-        <div>
-            <input type="button" value="Apply">
+
+        <div class="boxOfertas boxAzul">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/IAPWE.png" alt="IAPWE">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div class="boxPuestoVerifiedOrNew">
+                        <p class="fBlanco tituloPuesto">Freelance Writer 🎈</p>
+                        <div class="boxVerified">VERIFIED</div>
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa fBlanco">IAPWE</p>
+                        <img src="img/hot.png" alt="Hot">
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $40k - $50k" class="botonCaracteristicas">
+                    </div>
+                </div>
+            </div>
+            <div class="puestoRelacionado">
+                <input type="button" value="Content Writing" class="inputBlanco">
+                <input type="button" value="Non Tech" class="inputBlanco">
+                <input type="button" value="Writting" class="inputBlanco">
+            </div>
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p class="fBlanco">27d</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
+            </div>
         </div>
-    </div>
+
+        <div class="boxOfertas boxBlanco">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Wander.com.png" alt="Wander.com">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">Platform Engineer</p>
+                        <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Wander.com </p>
+                        <!-- <img src="img/hot.png" alt="Hot"> -->
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $10k - $150k" class="botonCaracteristicas">
+                    </div>
+                </div>
+            </div>
+            <div class="puestoRelacionado">
+                <input type="button" value="Enginner">
+                <input type="button" value="Sys Admin">
+                <input type="button" value="JavaScript">
+            </div>
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>5d</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
+            </div>
+        </div>
+
+        <div class="boxOfertas boxBlanco">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/White Sand.png" alt="White Sand">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div class="boxPuestoVerifiedOrNew">
+                        <p class="tituloPuesto">Software Developer 🎈</p>
+                        <p class="boxVerified">VERIFIED</p>
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p>White Sand</p>
+                        <!-- <img src="img/hot.png" alt="Hot"> -->
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $40k - $150k" class="botonCaracteristicas">
+                    </div>
+                </div>
+            </div>
+            <div class="puestoRelacionado">
+                <input type="button" value="Senior">
+                <input type="button" value="Developer">
+                <input type="button" value="JavaScript">
+            </div>
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>6d</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
+            </div>
+        </div>
+
+        <div class="boxOfertas boxAmarilloClaro">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Doughnut.png" alt="Doughnut">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">Freelance Copywriter</p>
+                        <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Doughnut</p>
+                        <!-- <img src="img/hot.png" alt="Hot"> -->
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $50k - $80k" class="botonCaracteristicas">
+                    </div>
+                </div>
+            </div>
+            <div class="puestoRelacionado">
+                <input type="button" value="Non tech">
+                <input type="button" value="Content Writing">
+            </div>
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>7d</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
+            </div>
+        </div>
+
+        <div class="boxOfertas boxAmarilloClaro">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Doughnut.png" alt="Doughnut">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">Freelance Graphic Designer</p>
+                        <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Doughnut</p>
+                        <!-- <img src="img/hot.png" alt="Hot"> -->
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $60k - $90k" class="botonCaracteristicas">
+                        <input type="button" value="⏰ Contractor" class="botonCaracteristicas">
+                    </div>
+                </div>
+            </div>
+            <div class="puestoRelacionado">
+                <input type="button" value="Desing">
+            </div>
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>8h</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
+            </div>
+        </div>
+
+        <div class="boxOfertas boxBlanco">
+            <div class="boxInformacion">
+                <div class="boxLogo">
+                    <img src="img/Lyra Health.png" alt="Lyra Health">
+                </div>
+                <div class="boxInfoPuesto">
+                    <div>
+                        <p class="tituloPuesto">Platform Technical Support Specialist</p>
+                        <!-- <p>VERIFIED</p> -->
+                    </div>
+                    <div class="boxEmpresaNew">
+                        <p class="nombreEmpresa">Lyra Health</p>
+                        <img src="img/new.png" alt="New">
+                    </div>
+                    <div class="boxInline">
+                        <input type="button" value="🌏 Worldwide" class="botonCaracteristicas">
+                        <input type="button" value="💰 $73k - $118k*" class="botonCaracteristicas">
+                        <input type="button" value="⏰ Contractor" class="botonCaracteristicas">
+                    </div>
+                </div>
+            </div>
+            <div class="puestoRelacionado">
+                <input type="button" value="System">
+                <input type="button" value="Teaching">
+                <input type="button" value="Cfo">
+            </div>
+            <div class="boxTiempo">
+                <img src="img/Attach.png" alt="Attach">
+                <p>2h</p>
+            </div>
+            <div class="boxApply">
+                <input type="button" value="Apply" class="botonApply w800 fBlanco bRojoApply">
+            </div>
+        </div>
+
+    </main>
 </body>
+
 </html>

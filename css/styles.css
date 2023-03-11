@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-image: url("/img/fondoHeader.png");
+    height: 475px;
+    /* display: grid; */
+    padding: 29px;
+    position: relative;
+}
+
+main {
+    background-color: #F5F5F5;
+    margin-top: 220px;
+}
+
+/* BOTONES */
+/* Botones de navegacion */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 82px;
+    margin-top: 10px;
+}
+
+.boton {
+    padding: 10px;
+    height: 42px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*  */
+
+.textoTitulo {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 1114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Colores para los botones */
+.bTurquesa {
+    background-color: #5BC6C6;
+    border: 2px solid #5BC6C6;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+}
+
+.bRojo {
+    background: #FF4742;
+    border: 2px solid #FF4742;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+}
+
+/* Tamaño para las fuentes */
+.w800 {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* Colores para las fuentes */
+.fBlanco {
+    color: #FFFFFF
+}
+
+.fNegro {
+    color: #000000;
+}
+
+/* Estilos para el titulo */
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+    top: 29px;
+    position: absolute;
+}
+
+.tRemote {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43.2px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+
+.barraSeparacion {
+    width: 3px;
+    height: 44px;
+    background: #FFFFFF;
+    margin: 10px;
+}
+
+.tOk {
+    font-size: 28px;
+    font-weight: 800px;
+    line-height: 34px;
+}
+
+/* Boton Buscar */
+.boxBuscar {
+    position: absolute;
+    top: 244px;
+    width: 435px;
+    height: 53px;
+    border-radius: 100px;
+    background-image: url(/img/Buscador.png);
+}
+
+.inputGroup {
+    position: absolute;
+    height: 53px;
+    width: 435px;
+    /* left: 512px; */
+    top: 243px;
+    border-radius: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px 1px #DDDDDD, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.input {
+    border: none;
+    background: #FFFFFF;
+    font-size: 23px;
+    padding: 10px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); */
+    outline: none;
+    margin-left: 10px;
+    width: 80%;
+}
+
+.imageFind {
+    top: 109px;
+    position: absolute;
+}
+
+.imageWork {
+    position: absolute;
+    top: 179px;
+}
+
+/* Grupo 1 */
+.grupo1 {
+    background-image: url(/img/Rectangle\ 4.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 345px;
+    width: 100%;
+    /* margin-top: 345px; */
+    z-index: 10;
+}
+
+.boxPublicarTrabajo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1114px;
+    height: 82px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 0px 1px #DDDDDD;
+    border-radius: 12px;
+}
+
+.bHideThis {
+    width: 88px;
+    height: 42px;
+    color: #FF4742;
+    border: 2px solid #FF4742;
+    border-radius: 12px;
+    background-color: #FFFBFB;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.parrafo1 {
+    font-weight: 800;
+    font-size: 16px;
+    color: #0F1115;
+}
+
+.boxEmpresas {
+    width: 1114px;
+    height: 82px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxEmpresas img {
+    filter: grayscale(100%);
+}
+
+.boxFiltros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1114px;
+    height: 82px;
+    background: #F5F5F5;
+}
+
+.boxFiltros2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxFiltros2 img {
+    margin-right: 27px;
+}
+
+select {
+    width: 162px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 50px;
+    margin-right: 18px;
+    padding-left: 14px;
+}
+
+.bSortBy {
+    width: 150px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 14px;
+}
+
+.boxAplicados {
+    width: 1114px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+}
+
+.boxAplicados div {
+    /* width: 111px; */
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    mix-blend-mode: luminosity;
+    border: 2px dashed rgba(221, 221, 221, 0.5);
+    border-radius: 32px;
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.morado {
+    background: #343477;
+}
+
+.marginSuperior {
+    margin-top: 80px;
+}
+
+.boxOfertas {
+    width: 1114px;
+    height: 88px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.boxInformacion {
+    display: flex;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.boxLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tituloPuesto {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.nombreEmpresa {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.botonApply {
+    width: 156px;
+    height: 44px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 35px;
+    opacity: 0%;
+    cursor: pointer;
+    transition: ease-in-out all 700ms;
+}
+.botonApply:hover {
+    opacity: 100%;
+    transition: ease-in-out all 700ms;
+}
+
+/* COLORES DE CAJAS */
+.boxAmarilloClaro {
+    background-color: #FFF38F;
+}
+
+.boxAmarilloFuerte {
+    background-color: #FFD500;
+}
+
+.boxRosado {
+    background-color: #FF61E2;
+}
+
+.boxAzul {
+    background-color: #003399;
+}
+
+.boxBlanco {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 0px 2px #DDDDDD;
+    border-radius: 12px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxInfoPuesto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.bRojoApply {
+    background-color: #F26969;
+    border: 2px solid #F26969;
+}
+
+.boxPuestoVerifiedOrNew {
+    display: flex;
+}
+
+.boxVerified {
+    margin-left: 25px;
+    height: 19px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #36E67F;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.botonCaracteristicas {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 32px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #393939;
+    margin-right: 10px;
+    padding: 3px 8px 2px 8px;
+}
+
+.boxInline {
+    display: flex;
+}
+
+.boxInline div {
+    margin-right: 5px;
+}
+
+.boxInline div img {
+    padding: 3px 8px 2px 8px;
+}
+
+.puestoRelacionado {
+    width: 25%;
+}
+
+.puestoRelacionado input {
+    height: 30px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 12px;
+    border: 2px solid #000;
+    background-color: #00000000;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 5px 15px 5px;
+}
+
+.boxTiempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+}
+
+.boxTiempo p {
+    font-weight: 300;
+    font-size: 13px;
+    color: #0F1115;
+}
+
+.boxTiempo .fBlanco {
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.boxApply {
+    width: 20%;
+    margin-left: 19px;
+}
+
+.boxEmpresaNew {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.boxEmpresaNew img {
+    margin-left: 17px;
+    margin-bottom: 5px;
+}
+
+.puestoRelacionado .inputBlanco {
+    background-color: #FFFFFF;
+    border: 2px solid #003399;
+    border-radius: 12px;
+    color: #003399;
+    /* width: 110.27px; */
+    height: 30px;
+    padding-top: 10px;
+}
+
+.boxDetalleOferta {
+    height: 4315px;
+    width: 1114px;
+    background-color: #FFFFFF;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.boxDetalle1 {
+    height: 770px;
+    /* width: 677px; */
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.boxTextoParte1 {
+    height: 725px;
+    width: 677px;
+    margin-left: 51px;
+    margin-top: 49px;
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.inputEmpresa {
+    font-style: normal;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+.inputPuesto {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 52px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+    margin-top: 20px;
+}
+
+.inputH4 {
+    font-size: 25px;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+.inputParrafo {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 12px;
+}
+
+.inputParrafoV2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 12px;
+    margin-left: 70px;
+}
+
+.inputParrafoV3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 8px;
+    margin-left: 130px;
+}
+
+.inputH4V2 {
+    font-size: 25px;
+    line-height: 26px;
+    margin-top: 50px;
+}
+
+.inputH3 {
+    font-size: 30px;
+    line-height: 26px;
+    margin-top: 50px;
+}
+
+.inputNegrita {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.inputNegritaV2 {
+    font-family: Nunito;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/*  */
+.boxAside {
+    height: 740px;
+    width: 361px;
+    border-radius: 15px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-top: 39px;
+    margin-left: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxAside img {
+    width: 115px;
+    height: 115px;
+    margin-top: 16px;
+}
+
+.whimsical {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin-top: 15px;
+}
+
+.paginaWeb {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    margin-top: 15px;
+}
+
+.botonApplyForThisJob {
+    height: 53px;
+    width: 229px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF3C36;
+    color: #FFFFFF;
+    margin-top: 36px;
+    cursor: pointer;
+}
+
+.views {
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.shareThisJob {
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.url {
+    height: 49px;
+    width: 179px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(206, 206, 206, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* margin-top: 25px; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.url p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+#linea {
+    margin-top: 28px;
+    height: 1px;
+    width: 272px;
+}
+
+.boxDetalle2 {
+    height: 3000px;
+    width: 1020px;
+    left: 47px;
+    top: 765.8955078125px;
+    border-radius: nullpx;
+    margin-left: 51px;
+}
+
+.boxPadreHowDoYouApply {
+    width: 100%;
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.boxHijoHowDoYouApply {
+    height: 479px;
+    width: 858px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputHowDoYouApply {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    color: #000000;
+    margin-top: 48.58px;
+    text-align: center;
+}
+
+.boxApplyForThisJob {
+    height: 64.23675537109375px;
+    width: 738.046630859375px;
+    border-radius: 40px;
+    background: #FF3C36;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 52px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.inputReferencia {
+    font-family: Nunito;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.condiciones {
+    font-family: Nunito;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 20px 0 20px;
+}
+
+/*
+font-family: Nunito;
+font-size: 13px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+
+font-family: Nunito;
+font-size: 13px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+
+font-family: Nunito;
+font-size: 13px;
+font-weight: 800;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+
+*/

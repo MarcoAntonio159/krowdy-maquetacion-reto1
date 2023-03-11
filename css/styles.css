@@ -292,7 +292,7 @@ select {
     width: 1114px;
     height: 88px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     border-radius: 12px;
     margin-bottom: 20px;
@@ -330,12 +330,31 @@ select {
     margin-right: 35px;
     opacity: 0%;
     cursor: pointer;
+    /* transition: ease-in-out all 700ms; */
+}
+
+.botonApply1 {
+    width: 156px;
+    height: 44px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 35px;
+    cursor: pointer;
     transition: ease-in-out all 700ms;
 }
+
 .botonApply:hover {
     opacity: 100%;
-    transition: ease-in-out all 700ms;
 }
+
+/* .botonApply:hover~.boxAmarilloClaro,
+.botonApply:hover~.boxAmarilloFuerte,
+.botonApply:hover~.boxRosado,
+.botonApply:hover~.boxAzul,
+.botonApply:hover~.boxBlanco {
+    opacity: 100%;
+} */
+
 
 /* COLORES DE CAJAS */
 .boxAmarilloClaro {
@@ -759,26 +778,6 @@ main {
     margin: 0 20px 0 20px;
 }
 
-/*
-font-family: Nunito;
-font-size: 13px;
-font-weight: 400;
-line-height: 25px;
-letter-spacing: 0em;
-text-align: center;
-
-font-family: Nunito;
-font-size: 13px;
-font-weight: 700;
-line-height: 25px;
-letter-spacing: 0em;
-text-align: center;
-
-font-family: Nunito;
-font-size: 13px;
-font-weight: 800;
-line-height: 25px;
-letter-spacing: 0em;
-text-align: center;
-
-*/
+#detalleOferta {
+    display: none;
+}

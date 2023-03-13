@@ -10,7 +10,6 @@
 header {
     background-image: url("/img/fondoHeader.png");
     height: 475px;
-    /* display: grid; */
     padding: 29px;
     position: relative;
 }
@@ -134,7 +133,6 @@ nav {
     box-shadow: 0px 0px 0px 1px #DDDDDD, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
     border-radius: 100px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -147,7 +145,6 @@ nav {
     background: #FFFFFF;
     font-size: 23px;
     padding: 10px;
-    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); */
     outline: none;
     margin-left: 10px;
     width: 80%;
@@ -172,7 +169,6 @@ nav {
     position: absolute;
     top: 345px;
     width: 100%;
-    /* margin-top: 345px; */
     z-index: 10;
 }
 
@@ -267,7 +263,6 @@ select {
 }
 
 .boxAplicados div {
-    /* width: 111px; */
     height: 40px;
     background: rgba(255, 255, 255, 0.5);
     mix-blend-mode: luminosity;
@@ -330,7 +325,6 @@ select {
     margin-right: 35px;
     opacity: 0%;
     cursor: pointer;
-    /* transition: ease-in-out all 700ms; */
 }
 
 .botonApply1 {
@@ -491,7 +485,6 @@ main {
     border: 2px solid #003399;
     border-radius: 12px;
     color: #003399;
-    /* width: 110.27px; */
     height: 30px;
     padding-top: 10px;
 }
@@ -500,16 +493,11 @@ main {
     height: 4315px;
     width: 1114px;
     background-color: #FFFFFF;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 .boxDetalle1 {
     height: 770px;
-    /* width: 677px; */
     display: flex;
-    /* justify-content: space-evenly; */
 }
 
 .boxTextoParte1 {
@@ -517,8 +505,6 @@ main {
     width: 677px;
     margin-left: 51px;
     margin-top: 49px;
-    /* display: flex;
-    justify-content: space-evenly; */
 }
 
 .inputEmpresa {
@@ -533,7 +519,6 @@ main {
     font-weight: 800;
     line-height: 52px;
     letter-spacing: 0em;
-    /* text-align: left; */
     margin-top: 20px;
 }
 
@@ -672,7 +657,6 @@ main {
     background: #FFFFFF;
     border: 1px solid rgba(206, 206, 206, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    /* margin-top: 25px; */
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
